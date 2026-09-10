@@ -58,13 +58,6 @@ function App() {
     });
   };
 
-  const handleRemoveAll = () => {
-    setStack([]);
-    toast.info('All technologies removed from your stack.', {
-      position: 'top-right',
-      autoClose: 2000,
-    });
-  };
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
