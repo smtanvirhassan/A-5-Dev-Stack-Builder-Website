@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-
+import Technologies from './components/Technologies';
+import Footer from './components/Footer';
 
 function App() {
   const [technologies, setTechnologies] = useState([]);
@@ -38,6 +38,8 @@ function App() {
       autoClose: 2000,
     });
   };
+
+  
   const handleRemove = (id) => {
     const item = stack.find((item) => item.id === id);
     setStack((prev) => prev.filter((item) => item.id !== id));
@@ -49,7 +51,7 @@ function App() {
     }
   };
 
- 
+  
   const handleRemoveAll = () => {
     setStack([]);
     toast.info('All technologies removed from your stack.', {

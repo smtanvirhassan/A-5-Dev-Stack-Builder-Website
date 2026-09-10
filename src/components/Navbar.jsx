@@ -8,10 +8,10 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
-      {/* Desktop navbar */}
+    
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Mobile: hamburger */}
+         
           <button
             className="lg:hidden p-2 -ml-2 text-gray-600 hover:text-gray-900"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -32,12 +32,10 @@ export default function Navbar() {
             </svg>
           </button>
 
-          {/* Left: logo (desktop) / Center: logo (mobile) */}
           <div className="flex-shrink-0 lg:flex-none">
             <img src={logoText} alt="DevStack" className="h-8" />
           </div>
 
-          {/* Center: nav links (desktop only) */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -54,7 +52,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Right: auth buttons */}
           <div className="flex items-center gap-3">
             <button className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
               Sign In
@@ -66,7 +63,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile nav menu */}
+   
       {mobileOpen && (
         <div className="lg:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-3 space-y-2">

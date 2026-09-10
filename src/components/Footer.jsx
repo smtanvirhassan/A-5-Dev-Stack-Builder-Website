@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-20 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* Brand */}
+   
         <div>
           <img
             src={logoText}
@@ -22,7 +22,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Product */}
         <div>
           <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
             Product
@@ -34,7 +33,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Company */}
         <div>
           <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
             Company
@@ -46,7 +44,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Legal */}
         <div>
           <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
             Legal
@@ -58,7 +55,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-8">
         <div className="max-w-7xl mx-auto px-6 lg:px-20 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <span>© 2026 Dev Stack. All rights reserved.</span>
