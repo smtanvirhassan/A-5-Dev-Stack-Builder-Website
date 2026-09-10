@@ -4,15 +4,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Technologies from './components/Technologies';
-import Footer from './components/Footer';
+
 
 function App() {
   const [technologies, setTechnologies] = useState([]);
   const [stack, setStack] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Load technology data from JSON
   useEffect(() => {
     fetch('/data.json')
       .then((res) => res.json())
@@ -26,7 +24,6 @@ function App() {
       });
   }, []);
 
-  // Add technology to stack
   const handleAddToStack = (tech) => {
     if (stack.some((item) => item.id === tech.id)) {
       toast.warning(`${tech.name} is already in your stack!`, {
@@ -41,8 +38,6 @@ function App() {
       autoClose: 2000,
     });
   };
-
-  // Remove single item from stack
   const handleRemove = (id) => {
     const item = stack.find((item) => item.id === id);
     setStack((prev) => prev.filter((item) => item.id !== id));
@@ -54,7 +49,7 @@ function App() {
     }
   };
 
-  // Remove all items from stack
+ 
   const handleRemoveAll = () => {
     setStack([]);
     toast.info('All technologies removed from your stack.', {
@@ -63,6 +58,13 @@ function App() {
     });
   };
 
+  const handleRemoveAll = () => {
+    setStack([]);
+    toast.info('All technologies removed from your stack.', {
+      position: 'top-right',
+      autoClose: 2000,
+    });
+  };
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
