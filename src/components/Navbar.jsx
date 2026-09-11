@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
          
           <button
-            className="lg:hidden p-2 -ml-2 text-gray-600 hover:text-gray-900"
+            className="lg:hidden p-2 -ml-2 text-gray-600 hover:text-gray-900 cursor-pointer"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -41,11 +41,7 @@ export default function Navbar() {
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className={
-                  link === 'Home'
-                    ? 'gradient-text font-medium'
-                    : 'text-gray-600 hover:text-gray-900 transition-colors font-medium'
-                }
+                className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
               >
                 {link}
               </a>
@@ -53,10 +49,10 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3">
-            <button className="text-gray-600 hover:text-gray-900 font-medium transition-colors">
+            <button className="text-gray-600 hover:text-gray-900 font-medium transition-colors cursor-pointer">
               Sign In
             </button>
-            <button className="gradient-bg text-white px-5 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
+            <button className="gradient-bg text-white px-5 py-2 rounded-full font-medium hover:opacity-90 transition-opacity cursor-pointer">
               Sign Up
             </button>
           </div>
@@ -71,11 +67,7 @@ export default function Navbar() {
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className={`block py-2 px-3 rounded-lg font-medium ${
-                  link === 'Home'
-                    ? 'gradient-text'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                } transition-colors`}
+                className="block py-2 px-3 rounded-lg font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {link}

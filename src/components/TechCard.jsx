@@ -1,11 +1,11 @@
 const TechCard = ({ tech, onAddToStack, isAdded }) => {
-
   const getBadgeColor = (badge) => {
     const colors = {
       Popular: 'bg-pink-100 text-pink-600',
       Versatile: 'bg-purple-100 text-purple-600',
       Fast: 'bg-red-100 text-red-600',
       Standard: 'bg-green-100 text-green-600',
+      'SSR / Edge': 'bg-green-100 text-green-600',
       'Top SQL': 'bg-blue-100 text-blue-600',
       Cache: 'bg-red-100 text-red-600',
       Ubiquitous: 'bg-orange-100 text-orange-600',
@@ -19,7 +19,7 @@ const TechCard = ({ tech, onAddToStack, isAdded }) => {
 
   return (
     <div className="border border-gray-200 rounded-xl p-5 flex flex-col gap-3 bg-white hover:shadow-md transition-shadow duration-200">
-  
+      {/* Top row: Icon + Badge */}
       <div className="flex items-start justify-between">
         <img
           src={tech.icon}
@@ -33,12 +33,15 @@ const TechCard = ({ tech, onAddToStack, isAdded }) => {
         </span>
       </div>
 
+      {/* Name */}
       <h3 className="text-lg font-bold text-gray-900">{tech.name}</h3>
 
+      {/* Description */}
       <p className="text-sm text-gray-500 leading-relaxed flex-grow">
         {tech.description}
       </p>
 
+      {/* Category + Difficulty + Rating */}
       <div className="flex items-center gap-3 flex-wrap text-sm">
         <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">
           {tech.category}
@@ -52,13 +55,14 @@ const TechCard = ({ tech, onAddToStack, isAdded }) => {
         </span>
       </div>
 
+      {/* Add to Stack Button */}
       <button
         onClick={() => onAddToStack(tech)}
         disabled={isAdded}
         className={`w-full py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 cursor-pointer ${
           isAdded
             ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-            : 'gradient-bg text-white hover:opacity-90'
+            : 'bg-gray-900 text-white hover:bg-gray-800'
         }`}
       >
         {isAdded ? '✓ Added to Stack' : 'Add to Stack'}

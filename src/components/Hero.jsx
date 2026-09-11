@@ -17,10 +17,10 @@ function Hero() {
             project.
           </p>
           <div className="mt-8 flex gap-4 justify-center lg:justify-start">
-            <button className="gradient-bg text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition">
+            <button className="gradient-bg text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition cursor-pointer">
               Explore Technologies
             </button>
-            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold hover:border-gray-400 transition">
+            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold hover:border-gray-400 transition cursor-pointer">
               Learn More
             </button>
           </div>

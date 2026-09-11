@@ -6,11 +6,14 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-20 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
    
         <div>
-          <img
-            src={logoText}
-            alt="Dev Stack"
-            className="h-8 brightness-0 invert"
-          />
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 overflow-hidden shrink-0">
+              <img src={logoText} alt="Dev Stack" className="h-8 max-w-none object-left" />
+            </div>
+            <span className="text-xl font-bold text-white tracking-tight">
+              Dev<span className="text-pink-500 font-bold">Stack</span>
+            </span>
+          </div>
           <p className="text-sm text-gray-400 mt-3">
             Curated tools, technologies, and resources for developers building
             modern software.
