@@ -6,12 +6,9 @@ DevStack is a modern React web application that allows developers to explore var
 
 ## ✨ Features
 
-- 🔍 **Browse Technologies**: Explore tech stack items with details like category, badges, difficulty level, and user ratings.
-- ➕ **Add to Stack**: Easily add technologies to your personalized stack list.
-- 🚫 **Duplicate Prevention**: Interactive toast warnings when attempting to add an item that is already in your stack.
-- 🗑️ **Remove Items**: Remove individual items or clear the entire stack with a single click.
-- 🔔 **Toast Notifications**: Built-in visual feedback using React Toastify for seamless user interactions.
-- 📱 **Responsive Design**: Fully responsive layout built with Tailwind CSS and DaisyUI.
+- 🔍 **Browse & Compare Technologies**: Explore a curated collection of frontend, backend, database, language, styling, DevOps, and tools technologies — each with ratings, difficulty levels, badges, and descriptions.
+- ➕ **Build Your Custom Stack**: Add technologies to a personal stack sidebar with duplicate prevention, individual removal, and a one-click "Remove All" — all with real-time toast notifications via React Toastify.
+- 📱 **Fully Responsive Design**: A polished, mobile-first UI built with Tailwind CSS and DaisyUI featuring a sticky navbar, gradient brand theme, and smooth interactions across all devices.
 
 ---
 
