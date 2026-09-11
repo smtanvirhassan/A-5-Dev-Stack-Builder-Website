@@ -141,23 +141,3 @@ This calls the parent's `handleAddToStack` function and sends the `tech` object 
 ---
 
 
-## 🏃 How to Run Locally
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/smtanvirhassan/A-5-Dev-Stack-Builder-Website.git
-   cd devStack-app
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in Browser:**
-   Navigate to `http://localhost:5173` to view the application.
