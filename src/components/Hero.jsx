@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className="w-full py-16 lg:py-24 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        {/* Left column - Text content */}
+       
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-extrabold text-gray-900">
             Build Your Ideal
@@ -17,16 +17,16 @@ function Hero() {
             project.
           </p>
           <div className="mt-8 flex gap-4 justify-center lg:justify-start">
-            <button className="gradient-bg text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition cursor-pointer">
+            <button className="gradient-bg text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition">
               Explore Technologies
             </button>
-            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold hover:border-gray-400 transition cursor-pointer">
+            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold hover:border-gray-400 transition">
               Learn More
             </button>
           </div>
         </div>
 
-        {/* Right column - Banner image */}
+        
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
             src={bannerImg}
